@@ -1,0 +1,145 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-06-05T08:33:52.737Z",
+    "end": "2022-06-05T08:36:04.040Z",
+    "duration": 131303,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "49009b8a-b3af-4fac-8be3-a651fd0303bb",
+      "title": "",
+      "fullFile": "cypress/integration/registeration/buyer/cases.spec.js",
+      "file": "cypress/integration/registeration/buyer/cases.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "538473df-fd77-4bdd-ade6-37c7bf72abd2",
+          "title": "seller registeration",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": " case1",
+              "fullTitle": "seller registeration  case1",
+              "timedOut": null,
+              "duration": 35670,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.log('buyer register');\nconst fileName = 'original.jpeg';\ncy.visit('https://staging.mazaady.com/', {\n  headers: {\n    \"Accept-Encoding\": \"gzip, deflate, br\"\n  }\n});\n/* ==== Generated with Cypress Studio ==== */\ncy.get('.flex-row > .user-actions').click().then(() => {\n  // we are trying to return something\n  // from the .within callback,\n  // but it won't have any effect\n  cy.log(' click on register button');\n});\n/* ==== End Cypress Studio ==== */\n/* ==== Generated with Cypress Studio ==== */\ncy.get('.flex-row > :nth-child(7)').click();\ncy.get('.flex-row > :nth-child(7) > .dropdown-menu > .categories-sections > :nth-child(2) > a').click();\n/* ==== End Cypress Studio ==== */\n/* ==== Generated with Cypress Studio ==== */\ncy.get('.flex-row > .user-actions').click({\n  force: true\n});\ncy.get('.flex-row > .user-actions > .dropdown-menu > .categories-sections > .nav-item > [href=\"https://staging.mazaady.com/register\"]').click({\n  force: true\n});\ncy.get(':nth-child(6) > label').click({\n  force: true\n});\ncy.get('#opt-91').check({\n  force: true\n});\ncy.get('#start').click({\n  force: true\n});\ncy.get('#first_name').clear({\n  force: true\n});\ncy.get('#first_name').type('aawa', {\n  force: true\n});\ncy.get('#last_name').clear({\n  force: true\n});\ncy.get('#last_name').type('wqwq', {\n  force: true\n});\ncy.get('#email').clear({\n  force: true\n});\ncy.get('#email').type('zzzzzzxwawawa@gmail.com', {\n  force: true\n});\ncy.get('.page-section > .col-sm-8 > :nth-child(1)').click({\n  force: true\n});\ncy.get('#password').clear({\n  force: true\n});\ncy.get('#password').type('123456', {\n  force: true\n});\ncy.get('#confirm_password').clear({\n  force: true\n});\ncy.get('#confirm_password').type('123456', {\n  force: true\n});\ncy.get('.form-check > :nth-child(1) > label').click({\n  force: true\n});\ncy.get('#opt-14').check({\n  force: true\n});\ncy.get(':nth-child(5) > .col-12 > .btn').click({\n  force: true\n});\ncy.wait(6000);\n/* ==== End Cypress Studio ==== */",
+              "err": {},
+              "uuid": "291d220a-31c7-483a-b40c-98c4682d3060",
+              "parentUUID": "538473df-fd77-4bdd-ade6-37c7bf72abd2",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": " case2",
+              "fullTitle": "seller registeration  case2",
+              "timedOut": null,
+              "duration": 33428,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.log('verifyemail');\ncy.visit('https://mailtrap.io/inboxes/1558797/messages/2510791390');\n/* ==== Generated with Cypress Studio ==== */\ncy.get('#user_email').clear({\n  force: true\n});\ncy.get('#user_email').type('Info@mazaady.com', {\n  force: true\n});\ncy.get('.login_next_button').click({\n  force: true\n});\ncy.wait(7000);\ncy.get('#user_password').clear({\n  force: true\n});\ncy.get('#user_password').type('P@m_7aza@dy$', {\n  force: true\n});\ncy.get('.login_password > :nth-child(3) > .button').click({\n  force: true\n});\ncy.wait(7000);\n/* ==== End Cypress Studio ==== */\n/* ==== Generated with Cypress Studio ==== */\n/* ==== End Cypress Studio ==== */\ncy.get('.settings_inbox_link > .i4w4pc3').click();\ncy.wait(7000);\ncy.get(':nth-child(1) > .i18m0o91').click();\n/* ==== End Cypress Studio ==== */",
+              "err": {},
+              "uuid": "88f66490-49ea-4a22-b84e-58cd5baec5ba",
+              "parentUUID": "538473df-fd77-4bdd-ade6-37c7bf72abd2",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": " case3",
+              "fullTitle": "seller registeration  case3",
+              "timedOut": null,
+              "duration": 38112,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.log('validation field');\ncy.visit('https://staging.mazaady.com/', {\n  headers: {\n    \"Accept-Encoding\": \"gzip, deflate, br\"\n  }\n});\n/* ==== Generated with Cypress Studio ==== */\ncy.get('.flex-row > .user-actions').click().then(() => {\n  // we are trying to return something\n  // from the .within callback,\n  // but it won't have any effect\n  cy.log(' click on register button');\n});\n/* ==== End Cypress Studio ==== */\n/* ==== Generated with Cypress Studio ==== */\ncy.get('.flex-row > :nth-child(7)').click();\ncy.get('.flex-row > :nth-child(7) > .dropdown-menu > .categories-sections > :nth-child(2) > a').click();\n/* ==== End Cypress Studio ==== */\n/* ==== Generated with Cypress Studio ==== */\ncy.get('.flex-row > .user-actions').click({\n  force: true\n});\ncy.get('.flex-row > .user-actions > .dropdown-menu > .categories-sections > .nav-item > [href=\"https://staging.mazaady.com/register\"]').click({\n  force: true\n});\ncy.get(':nth-child(6) > label').click({\n  force: true\n});\ncy.get('#opt-91').check({\n  force: true\n});\ncy.get('#start').click({\n  force: true\n});\n/* ==== Generated with Cypress Studio ==== */\n/* ==== End Cypress Studio ==== */\n/* ==== Generated with Cypress Studio ==== */\ncy.get(':nth-child(5) > .col-12 > .btn').click();\ncy.get('#first_name').clear();\ncy.get('#first_name').type('waw');\ncy.get(':nth-child(5) > .col-12 > .btn').click();\ncy.get('#last_name').clear();\ncy.get('#last_name').type('ewq');\ncy.get(':nth-child(5) > .col-12 > .btn').click();\ncy.get('#password').clear();\ncy.get('#password').type('123456');\ncy.get('#confirm_password').clear();\ncy.get('#confirm_password').type('123456');\ncy.get(':nth-child(5) > .col-12 > .btn').click();\ncy.get('#email').clear();\ncy.get('#email').type('andre@gmail.com');\ncy.get('.page-section > .col-sm-8 > :nth-child(1)').click();\ncy.get('#email').clear();\ncy.get('#email').type('andrewewewewe@gmail.com');\ncy.get('.page-section > .col-sm-8 > :nth-child(1)').click();\ncy.get('.form-check > :nth-child(1) > label').click();\ncy.get('#opt-14').check({\n  force: true\n});\ncy.get('.page-section > .col-sm-8').scrollIntoView();\n/* ==== End Cypress Studio ==== */",
+              "err": {},
+              "uuid": "7082c7bb-6f79-4e10-9651-e340343c93d9",
+              "parentUUID": "538473df-fd77-4bdd-ade6-37c7bf72abd2",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "291d220a-31c7-483a-b40c-98c4682d3060",
+            "88f66490-49ea-4a22-b84e-58cd5baec5ba",
+            "7082c7bb-6f79-4e10-9651-e340343c93d9"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 107210,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.3.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}
